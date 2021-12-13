@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChallengeTwo.UI
 {
-    class ProgramUI
+    public class ProgramUI
     {
     }
 }
