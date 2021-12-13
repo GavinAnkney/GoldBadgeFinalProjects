@@ -1,0 +1,6 @@
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Lib\bin\Debug\ChallengeOne.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Lib\bin\Debug\ChallengeOne.Lib.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Lib\obj\Debug\ChallengeOne.Lib.csproj.AssemblyReference.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Lib\obj\Debug\ChallengeOne.Lib.csproj.CoreCompileInputs.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Lib\obj\Debug\ChallengeOne.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Lib\obj\Debug\ChallengeOne.Lib.pdb
