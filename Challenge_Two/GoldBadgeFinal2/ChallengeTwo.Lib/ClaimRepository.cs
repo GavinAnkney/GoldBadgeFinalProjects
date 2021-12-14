@@ -29,8 +29,8 @@ namespace ChallengeTwo.Lib
 
         //Delete
 
-        // Helper Methods
-        public bool TakeCareOfNextClaim()
+        
+        public bool TakeNextClaim(int id)
         {
 
         }

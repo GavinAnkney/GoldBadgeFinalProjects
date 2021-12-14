@@ -9,7 +9,7 @@ namespace ChallengeOne.UI
 {
     public class ProgramUI
     {
-        private static MenuRepository _menuRepo = new MenuRepository();
+        private readonly MenuRepository _menuRepo = new MenuRepository();
         public void Run()
         {
             RunApplication();
