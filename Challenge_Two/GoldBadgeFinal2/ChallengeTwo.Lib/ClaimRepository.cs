@@ -8,17 +8,31 @@ namespace ChallengeTwo.Lib
 {
     public class ClaimRepository
     {
-        private readonly Queue<Claim> _claims = new Queue<Claim>();
+        public Queue<Claim> _claims = new Queue<Claim>();
 
         // Create
-
+        public bool EnterNewClaim(Claim claim)
+        {
+            if (claim == null)
+            {
+                return false;
+            }
+            _claims.Enqueue(claim);
+            return true;
+        }
         // Read
-
+        public Queue<Claim> SeeAllClaims()
+        {
+            return _claims;
+        }
         // Update
 
         //Delete
 
         // Helper Methods
+        public bool TakeCareOfNextClaim()
+        {
 
+        }
     }
 }
