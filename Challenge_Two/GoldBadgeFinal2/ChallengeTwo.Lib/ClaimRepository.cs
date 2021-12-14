@@ -9,7 +9,7 @@ namespace ChallengeTwo.Lib
     public class ClaimRepository
     {
         public Queue<Claim> _claims = new Queue<Claim>();
-
+        //private int _count = 0;
         // Create
         public bool EnterNewClaim(Claim claim)
         {
@@ -29,10 +29,19 @@ namespace ChallengeTwo.Lib
 
         //Delete
 
-        
-        public bool TakeNextClaim(int id)
+        /*public bool TakeNextClaim(int id)
         {
-
+            foreach (var claimId in _claims)
+            {
+                if ()
+                {
+       
+                }
+            }
+        }*/
+        public void AddClaimToQueue(Claim claim)
+        {
+            _claims.Enqueue(claim);
         }
     }
 }

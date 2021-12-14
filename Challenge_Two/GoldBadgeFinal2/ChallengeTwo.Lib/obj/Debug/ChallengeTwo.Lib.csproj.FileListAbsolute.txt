@@ -1,0 +1,6 @@
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Lib\obj\Debug\ChallengeTwo.Lib.csproj.CoreCompileInputs.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Lib\bin\Debug\ChallengeTwo.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Lib\bin\Debug\ChallengeTwo.Lib.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Lib\obj\Debug\ChallengeTwo.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Lib\obj\Debug\ChallengeTwo.Lib.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Lib\obj\Debug\ChallengeTwo.Lib.csproj.AssemblyReference.cache
