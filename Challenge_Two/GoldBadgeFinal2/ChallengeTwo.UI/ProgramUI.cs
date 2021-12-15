@@ -53,6 +53,7 @@ namespace ChallengeTwo.UI
                         isRunnning = false;
                         break;
                     default:
+
                         break;
                 }
             }
@@ -100,7 +101,7 @@ namespace ChallengeTwo.UI
         {
             Console.WriteLine($"Here are ther details for the next claim to be handled: \n" +
                 "Claim Id: \tType\tDescription\tAmount\tDateOfAccident\tDateOfClaim\tIsValid");
-            Console.WriteLine("{0}", _claimRepo.NextInQueue());
+            Console.WriteLine(_claimRepo.NextInQueue());
         }
         private void Seed()
         {

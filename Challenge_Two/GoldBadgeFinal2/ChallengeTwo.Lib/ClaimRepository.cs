@@ -30,13 +30,13 @@ namespace ChallengeTwo.Lib
         // Delete
         public bool NextInQueue()
         {
-            if (_claims.Count < 0)
+            if (_claims.Count() <= 0)
             {
                 return false;
             }
             _claims.Dequeue();
             return true;
-        }
+        }                
             
            
         // Helper Method
