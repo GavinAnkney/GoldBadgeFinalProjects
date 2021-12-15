@@ -16,7 +16,6 @@ namespace ChallengeTwo.Lib
         public DateTime DateOfAccident { get;  set; }
         public DateTime DateOfClaim { get; set; }
         public bool IsValid { get; set; }
-      
         public Claim()
         {
         }

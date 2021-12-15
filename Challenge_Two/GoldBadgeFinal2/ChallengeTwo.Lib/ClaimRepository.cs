@@ -9,7 +9,7 @@ namespace ChallengeTwo.Lib
     public class ClaimRepository
     {
         public Queue<Claim> _claims = new Queue<Claim>();
-        //private int _count = 0;
+        
         // Create
         public bool EnterNewClaim(Claim claim)
         {
@@ -27,21 +27,34 @@ namespace ChallengeTwo.Lib
         }
         // Update
 
-        //Delete
-
-        /*public bool TakeNextClaim(int id)
+        // Delete
+        public bool NextInQueue()
         {
-            foreach (var claimId in _claims)
+            if (_claims.Count < 0)
             {
-                if ()
-                {
-       
-                }
+                return false;
             }
-        }*/
+            _claims.Dequeue();
+            return true;
+        }
+            
+           
+        // Helper Method
         public void AddClaimToQueue(Claim claim)
         {
             _claims.Enqueue(claim);
+        }
+
+        public bool ClaimIsValid(Claim claim)
+        {
+            DateTime dateOfAccident = claim.DateOfAccident;
+            DateTime dateOfClaim = claim.DateOfClaim;
+            TimeSpan diffBetweenDates = dateOfClaim - dateOfAccident;
+            if (diffBetweenDates.Days <= 30)
+            {
+                return true;
+            }
+            else return false;
         }
     }
 }

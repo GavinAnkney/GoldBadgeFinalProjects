@@ -9,7 +9,7 @@ namespace ChallengeTwo.UI
 {
     public class ProgramUI
     {
-        private readonly ClaimRepository _claimRepo = new ClaimRepository();
+        private static ClaimRepository _claimRepo = new ClaimRepository();
         public void Run()
         {
             Seed();
@@ -39,7 +39,9 @@ namespace ChallengeTwo.UI
                         Console.ReadKey();
                         break;
                     case "2":
-                        //NextClaimInQueue();
+                        NextClaimInQueue();
+                        Console.WriteLine("Press any key to continue...");
+                        Console.ReadKey();
                         break;
                     case "3":
                         Claim newClaim = CreateANewClaim();
@@ -73,15 +75,13 @@ namespace ChallengeTwo.UI
             newClaim.DateOfAccident = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Please enter the date the accident was claimed on (year/month/date): ");
             newClaim.DateOfClaim = DateTime.Parse(Console.ReadLine());
-            Console.WriteLine("Is this a valid claim? (y/n) Press enter");
-            string isValid = Console.ReadLine().ToLower();
-            if (isValid == "y")
+            if (_claimRepo.ClaimIsValid(newClaim))
             {
-                newClaim.IsValid = true;
+                Console.WriteLine("The claim is valid.");
             }
             else
             {
-                newClaim.IsValid = false;
+                Console.WriteLine("The claim is not valid.");
             }
             return newClaim;
         }
@@ -92,22 +92,24 @@ namespace ChallengeTwo.UI
             int counter = 1;
             foreach (var claim in _claimRepo.SeeAllClaims())
             {
-                Console.WriteLine($"{claim.ClaimId}\t{claim.ClaimType}\t{claim.Description}\t${claim.ClaimAmount}\t{claim.DateOfAccident}\t{claim.DateOfClaim}\t{claim.IsValid}");
+                Console.WriteLine($"{claim.ClaimId}\t{claim.ClaimType, -25}\t{claim.Description}\t${claim.ClaimAmount}\t{claim.DateOfAccident}\t{claim.DateOfClaim}\t{claim.IsValid}");
                 counter++;
             }
         }
-        /*private void NextClaimInQueue()
+        private void NextClaimInQueue()
         {
-            throw new NotImplementedException();
-        }*/
+            Console.WriteLine($"Here are ther details for the next claim to be handled: \n" +
+                "Claim Id: \tType\tDescription\tAmount\tDateOfAccident\tDateOfClaim\tIsValid");
+            Console.WriteLine("{0}", _claimRepo.NextInQueue());
+        }
         private void Seed()
         {
-            Claim claim1 = new Claim(1, ClaimType.Home, "Home caught on fire.", 275000, new DateTime(2021, 12, 08), new DateTime(2021, 12, 14), true);
-            Claim claim2 = new Claim(2, ClaimType.Theft, "My laptop was stolen.", 2500, new DateTime(2021,12,10), new DateTime(2021,12,12), true);
-            Claim claim3 = new Claim(3, ClaimType.Car, "My car was stolen.", 14000, new DateTime(2021,02,14), new DateTime(2021,12,10), false);
+            Claim claim1 = new Claim(1, ClaimType.Home, "Home caught on fire.", 275000.00m, new DateTime(2021, 12, 08), new DateTime(2021, 12, 14), true);
+            Claim claim2 = new Claim(2, ClaimType.Theft, "My laptop was stolen.", 2500.00m, new DateTime(2021,12,10), new DateTime(2021,12,12), true);
+            Claim claim3 = new Claim(3, ClaimType.Car, "My car was stolen.", 14000.00m, new DateTime(2021,02,14), new DateTime(2021,12,10), false);
             _claimRepo.AddClaimToQueue(claim1);
             _claimRepo.AddClaimToQueue(claim2);
             _claimRepo.AddClaimToQueue(claim3);
         }
     }
-}
+} 
