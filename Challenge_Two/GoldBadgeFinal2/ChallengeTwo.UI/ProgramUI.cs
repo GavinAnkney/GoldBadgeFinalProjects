@@ -88,12 +88,14 @@ namespace ChallengeTwo.UI
         }
         private void ListOfAllClaims()
         {
-            Console.WriteLine("Claims: \n" +
-                "Claim Id\tClaim Type\tClaim Description\tClaim Amount\tDate of Accident\tDate of Claim\tIs it Valid?");
+            Console.Clear();
+            Console.WriteLine(String.Format("|{0, 0}|{1, -10}|{2, -10}|{3, -10}|{4, -10}|{5, -10}|{6, -10}|",
+                "Claim Id", "Claim Type", "Claim Description", "Claim Amount", "Date of Accident", "Date of Claim", "Is it Valid?"));
+            PrintLine();
             int counter = 1;
             foreach (var claim in _claimRepo.SeeAllClaims())
             {
-                Console.WriteLine($"{claim.ClaimId}\t{claim.ClaimType, -25}\t{claim.Description}\t${claim.ClaimAmount}\t{claim.DateOfAccident}\t{claim.DateOfClaim}\t{claim.IsValid}");
+                Console.WriteLine($"{claim.ClaimId, -5}\t{claim.ClaimType, -10}\t{claim.Description, -10}\t${claim.ClaimAmount, -10}\t{claim.DateOfAccident, -10}\t{claim.DateOfClaim}\t{claim.IsValid}");
                 counter++;
             }
         }
@@ -111,6 +113,10 @@ namespace ChallengeTwo.UI
             _claimRepo.AddClaimToQueue(claim1);
             _claimRepo.AddClaimToQueue(claim2);
             _claimRepo.AddClaimToQueue(claim3);
+        }
+        private void PrintLine()
+        {
+            Console.WriteLine("_______________________________________________________________________________________________________________");
         }
     }
 } 
