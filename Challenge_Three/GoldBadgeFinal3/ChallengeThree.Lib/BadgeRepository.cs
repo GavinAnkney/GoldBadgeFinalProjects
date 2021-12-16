@@ -8,6 +8,16 @@ namespace ChallengeThree.Lib
 {
     class BadgeRepository
     {
-        Dictionary Badge = new Dictionary();
+        Dictionary<int,string> Badge = new Dictionary<int,string>();
+
+        // Create
+
+        // Read
+
+        // Update
+
+        // Delete
+
+        // Helper Methods
     }
 }
