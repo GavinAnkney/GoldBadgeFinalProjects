@@ -92,11 +92,9 @@ namespace ChallengeTwo.UI
             Console.WriteLine(String.Format("|{0, 0}|{1, -10}|{2, -20}|{3, -20}|{4, -20}|{5, -20}|{6, -10}|",
                 "Claim Id", "Claim Type", "Claim Description", "Claim Amount", "Date of Accident", "Date of Claim", "Is it Valid?"));
             PrintLine(tableWidth);
-            int counter = 1;
             foreach (var claim in _claimRepo.SeeAllClaims())
             {
                 Console.WriteLine($"{claim.ClaimId, -5}\t{claim.ClaimType, -10}\t{claim.Description, -10}\t${claim.ClaimAmount, -10}\t{claim.DateOfAccident, -10}\t{claim.DateOfClaim, -10}\t{claim.IsValid}");
-                counter++;
             }
         }
         private void NextClaimInQueue()

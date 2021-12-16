@@ -9,7 +9,6 @@ C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Te
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.csproj.AssemblyReference.cache
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.csproj.CoreCompileInputs.cache
-C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.csproj.CopyComplete
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.dll
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\obj\Debug\ChallengeTwo.Tests.pdb
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.Tests\bin\Debug\ChallengeTwo.Lib.dll

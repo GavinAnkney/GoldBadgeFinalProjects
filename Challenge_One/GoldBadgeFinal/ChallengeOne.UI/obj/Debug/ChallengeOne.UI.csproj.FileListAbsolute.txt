@@ -7,3 +7,4 @@ C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.UI\
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.UI\obj\Debug\ChallengeOne.UI.csproj.CoreCompileInputs.cache
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.UI\obj\Debug\ChallengeOne.UI.exe
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.UI\obj\Debug\ChallengeOne.UI.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.UI\obj\Debug\ChallengeOne.UI.csproj.CopyComplete

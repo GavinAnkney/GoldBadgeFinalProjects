@@ -25,22 +25,23 @@ namespace ChallengeOne.Tests
         public void TestRemoveMenuItem()
         {
             // Arrange
-            
+            Menu item = new Menu("name", "desc", "ingred", 50);
+            bool expected = false;
             // Act
-         
+            bool actual = _menuRepo.RemoveMenuItem("name");
             // Assert
-          
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
         public void TestSeeAllMenuItems()
         {
             // Arrange 
-            
+            var expected = _menuRepo.SeeAllMenuItems();
             // Act
-            
+            var actual = _menuRepo.SeeAllMenuItems();
             // Assert
-            
+            Assert.AreEqual(expected, actual);
         }
 
         [TestMethod]
