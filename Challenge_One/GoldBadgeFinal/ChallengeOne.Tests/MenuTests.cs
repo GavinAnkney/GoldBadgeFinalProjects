@@ -47,11 +47,12 @@ namespace ChallengeOne.Tests
         public void TestGetItemByName()
         {
             // Arrange
-            string nameOne = "Gavin";
-            bool expected = true;
-            string nameTwo = "Gavin";
+            Menu item = new Menu("name", "desc", "ingred", 50);
+            _menuRepo.AddMenuItem(item);
+            var expected = item;
+            
             // Act
-            Menu actual = _menuRepo.GetItemByName(nameTwo); 
+            Menu actual = _menuRepo.GetItemByName("name"); 
             // Assert
             Assert.AreEqual(expected, actual);
         }
