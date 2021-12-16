@@ -38,7 +38,6 @@ namespace ChallengeTwo.Lib
             return true;
         }                
             
-           
         // Helper Method
         public void AddClaimToQueue(Claim claim)
         {
@@ -56,5 +55,19 @@ namespace ChallengeTwo.Lib
             }
             else return false;
         }
+
+        public Claim PullUpNextInQueue()
+        {
+           var claims = SeeAllClaims();
+            return claims.Peek();
+           // return _claims.Peek();
+            //if (_claims.Peek() == null)
+            //{
+            //    return false;
+            //}
+          //  _claims.Peek();
+
+         //   return true;
+        } 
     }
 }

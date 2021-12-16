@@ -40,7 +40,6 @@ namespace ChallengeTwo.UI
                         break;
                     case "2":
                         NextClaimInQueue();
-                        Console.WriteLine("Press any key to continue...");
                         Console.ReadKey();
                         break;
                     case "3":
@@ -89,21 +88,34 @@ namespace ChallengeTwo.UI
         private void ListOfAllClaims()
         {
             Console.Clear();
-            Console.WriteLine(String.Format("|{0, 0}|{1, -10}|{2, -10}|{3, -10}|{4, -10}|{5, -10}|{6, -10}|",
+            int tableWidth = 120;
+            Console.WriteLine(String.Format("|{0, 0}|{1, -10}|{2, -20}|{3, -20}|{4, -20}|{5, -20}|{6, -10}|",
                 "Claim Id", "Claim Type", "Claim Description", "Claim Amount", "Date of Accident", "Date of Claim", "Is it Valid?"));
-            PrintLine();
+            PrintLine(tableWidth);
             int counter = 1;
             foreach (var claim in _claimRepo.SeeAllClaims())
             {
-                Console.WriteLine($"{claim.ClaimId, -5}\t{claim.ClaimType, -10}\t{claim.Description, -10}\t${claim.ClaimAmount, -10}\t{claim.DateOfAccident, -10}\t{claim.DateOfClaim}\t{claim.IsValid}");
+                Console.WriteLine($"{claim.ClaimId, -5}\t{claim.ClaimType, -10}\t{claim.Description, -10}\t${claim.ClaimAmount, -10}\t{claim.DateOfAccident, -10}\t{claim.DateOfClaim, -10}\t{claim.IsValid}");
                 counter++;
             }
         }
         private void NextClaimInQueue()
         {
             Console.WriteLine($"Here are ther details for the next claim to be handled: \n" +
-                "Claim Id: \tType\tDescription\tAmount\tDateOfAccident\tDateOfClaim\tIsValid");
-            Console.WriteLine(_claimRepo.NextInQueue());
+            "Claim Id: \tType\tDescription\tAmount\tDateOfAccident\tDateOfClaim\tIsValid");
+            var claim = _claimRepo.PullUpNextInQueue();
+            Console.WriteLine($"{claim.ClaimId,-5}\t{claim.ClaimType,-10}\t{claim.Description,-10}\t${claim.ClaimAmount,-10}\t{claim.DateOfAccident,-10}\t{claim.DateOfClaim,-10}\t{claim.IsValid}");
+            Console.WriteLine("Do you want to deal with this claim now? (y/n) ");
+            string dealWithClaimNow = Console.ReadLine().ToLower();
+            if(dealWithClaimNow == "y")
+            {
+                _claimRepo.NextInQueue();
+                Console.WriteLine("The claim was successfully dequeued! Press any key to continue...");
+            }
+            else
+            {
+                Console.WriteLine("The claim was not dequeued! Press any key to return to the main menu");
+            }
         }
         private void Seed()
         {
@@ -114,9 +126,9 @@ namespace ChallengeTwo.UI
             _claimRepo.AddClaimToQueue(claim2);
             _claimRepo.AddClaimToQueue(claim3);
         }
-        private void PrintLine()
+        private void PrintLine(int tableWidth)
         {
-            Console.WriteLine("_______________________________________________________________________________________________________________");
+            Console.WriteLine(new string('_', tableWidth));
         }
     }
 } 

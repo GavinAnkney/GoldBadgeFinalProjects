@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ChallengeThree.Lib
 {
-    public class Class1
+    class BadgeRepository
     {
+        Dictionary Badge = new Dictionary();
     }
 }

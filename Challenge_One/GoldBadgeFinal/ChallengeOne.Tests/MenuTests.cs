@@ -19,27 +19,41 @@ namespace ChallengeOne.Tests
             // Assert
             Assert.AreEqual(expected, actual);
         }
+    
 
         [TestMethod]
         public void TestRemoveMenuItem()
         {
             // Arrange
-
+            
             // Act
-
+         
             // Assert
-
+          
         }
 
         [TestMethod]
-        public void TestViewAllMenu()
+        public void TestSeeAllMenuItems()
         {
             // Arrange 
-
+            
             // Act
-
+            
             // Assert
+            
+        }
 
+        [TestMethod]
+        public void TestGetItemByName()
+        {
+            // Arrange
+            string nameOne = "Gavin";
+            bool expected = true;
+            string nameTwo = "Gavin";
+            // Act
+            Menu actual = _menuRepo.GetItemByName(nameTwo); 
+            // Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }

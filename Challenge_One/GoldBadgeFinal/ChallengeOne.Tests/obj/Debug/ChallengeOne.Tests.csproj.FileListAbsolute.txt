@@ -1,0 +1,15 @@
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\obj\Debug\ChallengeOne.Tests.csproj.AssemblyReference.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\obj\Debug\ChallengeOne.Tests.csproj.CoreCompileInputs.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\ChallengeOne.Tests.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\ChallengeOne.Tests.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\ChallengeOne.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\ChallengeOne.Lib.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\obj\Debug\ChallengeOne.Tests.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_One\GoldBadgeFinal\ChallengeOne.Tests\obj\Debug\ChallengeOne.Tests.pdb
