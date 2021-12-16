@@ -120,9 +120,9 @@ namespace ChallengeTwo.UI
             Claim claim1 = new Claim(1, ClaimType.Home, "Home caught on fire.", 275000.00m, new DateTime(2021, 12, 08), new DateTime(2021, 12, 14), true);
             Claim claim2 = new Claim(2, ClaimType.Theft, "My laptop was stolen.", 2500.00m, new DateTime(2021,12,10), new DateTime(2021,12,12), true);
             Claim claim3 = new Claim(3, ClaimType.Car, "My car was stolen.", 14000.00m, new DateTime(2021,02,14), new DateTime(2021,12,10), false);
-            _claimRepo.AddClaimToQueue(claim1);
-            _claimRepo.AddClaimToQueue(claim2);
-            _claimRepo.AddClaimToQueue(claim3);
+            _claimRepo.EnterNewClaim(claim1);
+            _claimRepo.EnterNewClaim(claim2);
+            _claimRepo.EnterNewClaim(claim3);
         }
         private void PrintLine(int tableWidth)
         {

@@ -39,11 +39,6 @@ namespace ChallengeTwo.Lib
         }                
             
         // Helper Method
-        public void AddClaimToQueue(Claim claim)
-        {
-            _claims.Enqueue(claim);
-        }
-
         public bool ClaimIsValid(Claim claim)
         {
             DateTime dateOfAccident = claim.DateOfAccident;

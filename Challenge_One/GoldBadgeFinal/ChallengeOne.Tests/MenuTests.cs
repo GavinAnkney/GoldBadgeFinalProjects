@@ -26,7 +26,8 @@ namespace ChallengeOne.Tests
         {
             // Arrange
             Menu item = new Menu("name", "desc", "ingred", 50);
-            bool expected = false;
+            _menuRepo.AddMenuItem(item);
+            bool expected = true;
             // Act
             bool actual = _menuRepo.RemoveMenuItem("name");
             // Assert
@@ -37,11 +38,14 @@ namespace ChallengeOne.Tests
         public void TestSeeAllMenuItems()
         {
             // Arrange 
-            var expected = _menuRepo.SeeAllMenuItems();
+            Menu item = new Menu("name", "desc", "ingred", 50);
+            _menuRepo.AddMenuItem(item);
+
             // Act
             var actual = _menuRepo.SeeAllMenuItems();
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsNotNull(actual);
+            CollectionAssert.Contains(actual, item);
         }
 
         [TestMethod]

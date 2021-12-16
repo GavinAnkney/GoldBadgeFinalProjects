@@ -23,13 +23,14 @@ namespace ChallengeTwo.Tests
         [TestMethod]
         public void TestSeeAllClaims()
         {
-            // Arrange
-            
-
-            // Act
-
-            //Assert
-
+            // Arrange - what data do we need to be able to use to test.
+            Claim claim = new Claim(1, ClaimType.Home, "home destroyed", 275000, new DateTime(2021 / 12 / 06), new DateTime(2021 / 12 / 15), true);
+            _claimRepo.EnterNewClaim(claim);
+            // Act - Using our methods to complete the test
+            var actual = _claimRepo.SeeAllClaims();
+            //Assert - seeing if the method worked how we expected
+            Assert.IsNotNull(actual);
+            CollectionAssert.Contains(actual, claim);
         }
 
         [TestMethod]
@@ -37,27 +38,29 @@ namespace ChallengeTwo.Tests
         {
             // Arrange
             Claim claim = new Claim(1, ClaimType.Home, "home destroyed", 275000, new DateTime(2021 / 12 / 06), new DateTime(2021 / 12 / 15), true);
-            if (claim != null)
-            {
-                _claimRepo.DequeueNextInQueue();
-            }
-            var expected = _claimRepo.DequeueNextInQueue();
+            _claimRepo.EnterNewClaim(claim);
+
+
+            var expected = true;
             // Act
             var actual = _claimRepo.DequeueNextInQueue();
             // Assert
             Assert.AreEqual(expected, actual);
         }
 
+
         [TestMethod]
-        public void TestAddClaimToQueue()
+        public void TestDequeueFail_ShouldReturnFalse()
         {
-            // Arrange 
-            Claim claim = new Claim(1, ClaimType.Home, "home destroyed", 275000, new DateTime(2021 / 12 / 06), new DateTime(2021 / 12 / 15), true);
-
-            // Act
-            
-            // Assert
-
+            //Arrange
+            //needs queue to be null
+            int expectedCount = 0;
+            //Act
+            var result = _claimRepo.DequeueNextInQueue();
+            int actualCount = _claimRepo.SeeAllClaims().Count;
+            //Assert
+            Assert.IsFalse(result);
+            Assert.AreEqual(expectedCount, actualCount);
         }
 
         [TestMethod]
