@@ -28,7 +28,7 @@ namespace ChallengeTwo.Lib
         // Update
 
         // Delete
-        public bool NextInQueue()
+        public bool DequeueNextInQueue()
         {
             if (_claims.Count() <= 0)
             {
@@ -59,15 +59,7 @@ namespace ChallengeTwo.Lib
         public Claim PullUpNextInQueue()
         {
            var claims = SeeAllClaims();
-            return claims.Peek();
-           // return _claims.Peek();
-            //if (_claims.Peek() == null)
-            //{
-            //    return false;
-            //}
-          //  _claims.Peek();
-
-         //   return true;
+           return claims.Peek();
         } 
     }
 }

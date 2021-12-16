@@ -50,7 +50,6 @@ namespace ChallengeOne.Tests
             Menu item = new Menu("name", "desc", "ingred", 50);
             _menuRepo.AddMenuItem(item);
             var expected = item;
-            
             // Act
             Menu actual = _menuRepo.GetItemByName("name"); 
             // Assert

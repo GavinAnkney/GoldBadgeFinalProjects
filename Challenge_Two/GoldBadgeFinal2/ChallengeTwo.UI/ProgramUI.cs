@@ -109,7 +109,7 @@ namespace ChallengeTwo.UI
             string dealWithClaimNow = Console.ReadLine().ToLower();
             if(dealWithClaimNow == "y")
             {
-                _claimRepo.NextInQueue();
+                _claimRepo.DequeueNextInQueue();
                 Console.WriteLine("The claim was successfully dequeued! Press any key to continue...");
             }
             else
