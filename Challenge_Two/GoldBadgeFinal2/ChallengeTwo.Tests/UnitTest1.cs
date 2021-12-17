@@ -68,24 +68,34 @@ namespace ChallengeTwo.Tests
         {
             // Arrange
             Claim claim = new Claim(1, ClaimType.Home, "home destroyed", 275000, new DateTime(2021 / 12 / 06), new DateTime(2021 / 12 / 15), true);
-            if (claim.IsValid == true)
-            {
-                _claimRepo.ClaimIsValid(claim);
-            }
-            bool expected = true;
+            _claimRepo.EnterNewClaim(claim);
             // Act
             bool actual = _claimRepo.ClaimIsValid(claim);
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.IsTrue(actual);
+        }
+        [TestMethod]
+        public void TestClaimIsValid_ShouldReturnFalse()
+        {
+            // Arrange
+            Claim claim = new Claim(1, ClaimType.Home, "home destroyed", 275000, new DateTime(2021 / 10 / 06), new DateTime(2021 / 12 / 15), true);
+            _claimRepo.EnterNewClaim(claim);
+            // Act
+            bool actual = _claimRepo.ClaimIsValid(claim);
+            //Assert
+            Assert.IsTrue(actual);
         }
         [TestMethod]
         public void TestPullUpNextInQueue()
         {
             // Arrange
-
-            // Act
-
-            // Assert
+            Claim claim = new Claim(1, ClaimType.Home, "home destroyed", 275000, new DateTime(2021 / 10 / 06), new DateTime(2021 / 12 / 15), true);
+            _claimRepo.EnterNewClaim(claim);
+            var expected = claim;
+            //Act
+            Claim actual = _claimRepo.PullUpNextInQueue();
+            //Assert
+            Assert.AreEqual(expected, actual);
 
         }
     }

@@ -7,3 +7,4 @@ C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.UI
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.UI\bin\Debug\ChallengeTwo.Lib.pdb
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.UI\obj\Debug\ChallengeTwo.UI.exe
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.UI\obj\Debug\ChallengeTwo.UI.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Two\GoldBadgeFinal2\ChallengeTwo.UI\obj\Debug\ChallengeTwo.UI.csproj.CopyComplete
