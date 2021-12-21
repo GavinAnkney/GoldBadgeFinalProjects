@@ -5,3 +5,5 @@ C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThre
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.UI\obj\Debug\ChallengeThree.UI.csproj.CoreCompileInputs.cache
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.UI\obj\Debug\ChallengeThree.UI.exe
 C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.UI\obj\Debug\ChallengeThree.UI.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.UI\bin\Debug\ChallengeThree.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.UI\bin\Debug\ChallengeThree.Lib.pdb

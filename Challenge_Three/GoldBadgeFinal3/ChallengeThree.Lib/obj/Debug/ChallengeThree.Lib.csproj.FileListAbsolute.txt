@@ -1,0 +1,6 @@
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.Lib\obj\Debug\ChallengeThree.Lib.csproj.AssemblyReference.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.Lib\obj\Debug\ChallengeThree.Lib.csproj.CoreCompileInputs.cache
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.Lib\bin\Debug\ChallengeThree.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.Lib\bin\Debug\ChallengeThree.Lib.pdb
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.Lib\obj\Debug\ChallengeThree.Lib.dll
+C:\sd116\Gold_Badge\GoldBadgeFinal\Challenge_Three\GoldBadgeFinal3\ChallengeThree.Lib\obj\Debug\ChallengeThree.Lib.pdb
