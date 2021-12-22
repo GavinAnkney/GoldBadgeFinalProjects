@@ -25,7 +25,7 @@ namespace ChallengeTwo.Lib
         {
             return _claims;
         }
-        // Update
+        
 
         // Delete
         public bool DequeueNextInQueue()
