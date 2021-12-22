@@ -12,6 +12,7 @@ namespace ChallengeOne.UI
         private readonly MenuRepository _menuRepo = new MenuRepository();
         public void Run()
         {
+            Seed();
             RunApplication();
         }
         public void RunMenu()
@@ -109,6 +110,15 @@ namespace ChallengeOne.UI
                 $"Ingredients: {menuItem.Ingredients} \n" +
                 $"Price: ${menuItem.Price} \n");
             Console.WriteLine("**********************************");
+        }
+        private void Seed()
+        {
+            Menu item1 = new Menu("Pizza", "Best pizza in town", "thin crust, marinara sauce, cheese and pepperoni", 25.00m);
+            Menu item2 = new Menu("Burger", "Juicest burger in town", "Preztel bun, waygu beef, lettuce, pickle and mayo", 35.00m);
+            Menu item3 = new Menu("Shrimp Tacos", "Best shrimp tacos in town", "Corn torilla, shrimp, onions and cilantro", 15.00m);
+            _menuRepo.AddMenuItem(item1);
+            _menuRepo.AddMenuItem(item2);
+            _menuRepo.AddMenuItem(item3);
         }
     }
 }
