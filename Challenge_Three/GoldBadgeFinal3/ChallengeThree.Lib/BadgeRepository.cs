@@ -28,26 +28,26 @@ namespace ChallengeThree.Lib
             return _badge;
         }
 
-        //Read
         public Badge GetBadgeById(int badgeId)
         {
-            foreach (KeyValuePair<int, Badge> badge in _badge)
+            if (_badge.TryGetValue(badgeId, out Badge badge))
             {
-                return badge.Value;
+                return badge;
             }
             return null;
         }
 
 
         // Update
-       /* public bool UpdateDoorsOnBadge()
+        public bool UpdateDoorsOnBadge(Badge newBadge)
         {
-
-        }*/
-
-        // Delete
-
-        // Helper Methods
-
-    }  
+            Badge oldBadge = _badge[newBadge.BadgeId];
+            oldBadge.DoorNames = newBadge.DoorNames;
+            if (_badge[oldBadge.BadgeId] != newBadge)
+            {
+                return false;
+            }
+            else return true;
+        }
+    }
 }
